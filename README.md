@@ -6,6 +6,14 @@ This plugin gives you the ability to create unlimited TimeRewards, providing no 
 
 You can download this plugin off of spigot [here](https://www.spigotmc.org/resources/timed-rewards-%E2%9C%A8player-rewards.119467/)!
 
+#### Why no interface? I sense you ask
+Well, the reason is realistically quite simple, making a widely configurable interface is no easy task, and even then it would not give you the ability to customize it to your liking.
+That's why it's fully up to you to create whatever interface you wish to create.
+I mean... Look what you can create using simple DeluxMenus configs.
+
+![08_01_52+630_08_09_2024_javaw](https://github.com/user-attachments/assets/5b9f9e9b-a261-4db8-9f23-8e1bddb23c8f)
+![08_02_02+481_08_09_2024_javaw](https://github.com/user-attachments/assets/17bd4577-f21a-43b5-b69a-d5a3da3193ef)
+
 #### Default Config:
 ```yaml
 # This is sent to the client when a reward is claimed.
