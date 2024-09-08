@@ -57,8 +57,9 @@ entries:
 
 #### Placeholders:
 
-*Tested on the default reward config "daily"*
+All placeholders follow the same pattern `%timedrewards_PLACEHOLDER:timedID%`!
 
+*Tested on the default reward config "daily"*
 Placeholder | Description | Expected Result
 -- | -- | -- 
 %timedrewards_display:daily%  | Displays the Display name of the pool. | `Daily Reward`
