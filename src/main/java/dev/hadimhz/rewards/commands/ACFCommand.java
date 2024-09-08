@@ -114,8 +114,8 @@ public class ACFCommand extends BaseCommand {
     @Subcommand("claim")
     @CommandCompletion("@timed_reward")
     @Syntax("<rewardPool>")
+    @CommandPermission("timerewards.claim")
     public void onClaim(Player player, String timedRewardId) {
-
 
         final TimedReward timedReward = this.timeRewardStorage.get(timedRewardId);
         if (timedReward == null) {

@@ -42,6 +42,15 @@ entries:
     weight: 1.0
 ```
 
+#### Commands:
+
+Commands | Description | Permission
+-- | -- | -- 
+`/timerewards help` | Shows all the commands | None
+`/timerewards claim <rewardPool>` | Claims the reward specified for the player. | `timerewards.claim`
+`/timerewards list` | Lists all the current Timed Rewards. | `timerewards.admin`
+`/timerewards claimFor <player> <rewardPool>` | Claims a reward for the player specified, this command will ignore permissions but it wouldn't ignore cooldown. | `timerewards.admin`
+`/timerewards resetCooldown <player> <rewardPool>` | Resets the cooldown for the specified player on the specified reward pool. | `timerewards.admin`
 
 ---
 ### Supervisor:
@@ -53,11 +62,3 @@ Supervisor is inspired by Spring Boot, the Framework is designed to be both expa
 From my personal experience... which I guess is bias being one of it's developer, it really makes life that much easier. Allowing the creation of this plugin in only 521 lines of code (ignoring white spaces)
 
 Of course other utilities were used like [Aikar](https://github.com/aikar)'s [Annotation Command Framework](https://github.com/aikar/commands), ACF for short and [Lombok](https://projectlombok.org/).
-
-
-
-echo "# TimedRewards" >> README.md
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git push -u origin main
