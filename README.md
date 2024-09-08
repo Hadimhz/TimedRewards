@@ -42,6 +42,20 @@ entries:
     weight: 1.0
 ```
 
+#### Placeholders:
+
+*Tested on the default reward config "daily"*
+
+Placeholder | Description | Expected Result
+-- | -- | -- 
+%timedrewards_display:daily%  | Displays the Display name of the pool. | `Daily Reward`
+%timedrewards_cooldown:daily% | Displays that player's long cooldown to this pool. | `5 hours, 3 minutes and 50 seconds`
+%timedrewards_cooldown_short:daily% | Displays that player's short cooldown to this pool. | `5 hours`
+%timedrewards_duration:daily% | Displays the cooldown duration for this pool | `24 hours`
+%timedrewards_duration_short:daily% | Displays the cooldown duration for this pool | `24 hours`
+%timedrewards_available:daily% | Displays if the player can claim this reward *(ignores permission)* | `true/false`
+
+
 #### Commands:
 
 Commands | Description | Permission
