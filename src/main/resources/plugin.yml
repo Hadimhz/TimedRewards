@@ -1,0 +1,7 @@
+name: TimedRewards
+main: dev.hadimhz.rewards.TimedRewardsPlugin
+version: 1.0
+
+author: Hadimhz
+
+api-version: 1.16
