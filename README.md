@@ -1,12 +1,12 @@
 # TimedRewards
-###### The ultimate timed rewards plugin with no clutter.
+##### The ultimate timed rewards plugin with no clutter.
 ---
 
 This plugin gives you the ability to create unlimited TimeRewards, providing no UI the plugin registers a bunch of placeholders that give you full control over it, utilizing plugins like [DeluxeMenus](https://www.spigotmc.org/resources/deluxemenus.11734/) 
 
 You can download this plugin off of spigot [here](https://www.spigotmc.org/resources/timed-rewards-%E2%9C%A8player-rewards.119467/)!
 
-##### Default Config:
+#### Default Config:
 ```yaml
 # This is sent to the client when a reward is claimed.
 rewardMessage: 'You have received %reward% reward from %name%' 
@@ -19,7 +19,7 @@ noPermissionMessage: 'You do not have the permission required to claim this rewa
 ```
 
 
-##### Timed Reward Config:
+#### Timed Reward Config:
 
 _This is the default config generated when you start the plugin for the first time._
 
@@ -44,7 +44,7 @@ entries:
 
 
 ---
-#### Supervisor:
+### Supervisor:
 
 This plugin uses [cjcameron92/supervisor](https://github.com/cjcameron92/supervisor)'s [solo-dev](https://github.com/cjcameron92/supervisor/tree/dev-solo) branch as of `Sep-8-2024`, by the time you're reading this, that branch, or at least the current changes on it, would have already been merged into main version.
 
