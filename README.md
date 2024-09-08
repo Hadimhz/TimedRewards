@@ -14,7 +14,8 @@ rewardMessage: 'You have received %reward% reward from %name%'
 # This is the message sent to the player when they're on cooldown.
 cooldownMessage: 'This rewards is still on cooldown for %remaining%'
 
-# This is the message sent to the player when they don't have the permission needed to claim a reward.
+# This is the message sent to the player when they don't have the permission 
+# needed to claim a reward.
 noPermissionMessage: 'You do not have the permission required to claim this reward.'
 ```
 
