@@ -1,0 +1,57 @@
+menu_title: '&7Rewards'
+open_command: rewards
+size: 27
+update_interval: 1
+
+items:
+  'filler_item':
+    material: GRAY_STAINED_GLASS_PANE
+    slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+    display_name: ' '
+
+  'daily_reward_claimed':
+    material: GRAY_DYE
+    model_data: 3503
+    slot: 13
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&6&lᴅᴀɪʟʏ ʀᴇᴡᴀʀᴅ'
+    lore:
+      - ''
+      - '&7Reward Contains:'
+      - ' &8▪ &a&l+1 &fCommon Key'
+      - ' &8▪ &e&l+5 &fCoins'
+      - ' &8▪ &2&l+$&f1,000'
+      - ''
+      - '&6Cooldown: &f%timedrewards_cooldown:daily%'
+      - ''
+      - '&c&nClaimed'
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: string contains
+          input: "%timedrewards_available:daily%"
+          output: "false"
+
+  'daily_reward_available':
+    material: EMERALD
+    model_data: 3506
+    slot: 13
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&6&lᴅᴀɪʟʏ ʀᴇᴡᴀʀᴅ'
+    lore:
+      - ''
+      - '&7Reward Contains:'
+      - ' &8▪ &a&l+1 &fCommon Key'
+      - ' &8▪ &e&l+5 &fCoins'
+      - ' &8▪ &2&l+$&f1,000'
+      - ''
+      - '&e➥ Left-Click to claim'
+    priority: 2
+    left_click_commands:
+      - "[console] timerewards claimFor %player_name% daily"
+      - "[refresh]"
