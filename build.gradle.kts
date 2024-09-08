@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "dev.hadimhz.rewards"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -36,6 +36,9 @@ dependencies {
 }
 
 tasks.shadowJar {
+
+    archiveFileName = rootProject.name + "-" + version + ".jar"
+
     relocate("gg.supervisor", "dev.hadimhz.rewards.supervisor")
 }
 
